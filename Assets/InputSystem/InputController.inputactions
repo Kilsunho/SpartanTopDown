@@ -18,7 +18,7 @@
                     "name": "Look",
                     "type": "Value",
                     "id": "cd8d96bb-8f58-4d1a-a6a7-d6e72128c1ef",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -35,35 +35,79 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "0b663cf5-0afc-4e5e-9cd0-6e656b614689",
-                    "path": "",
+                    "name": "2D Vector",
+                    "id": "2df2c822-9fbc-401c-845f-e5ef680f1a7d",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "ff161c68-4410-469b-91c8-524d76c915b5",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
                     "action": "Move",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "b9348828-2244-4c87-b80a-42d82e9af121",
-                    "path": "",
+                    "name": "down",
+                    "id": "9352f12b-abef-40c1-ac65-e11a86f61276",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Look",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "749ebbc2-b352-489c-b7d6-cc5abf2a39a5",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "32739b06-945a-4193-9337-97b28a067976",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "9808b850-b34b-4798-852e-23d618f3873e",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "9808b850-b34b-4798-852e-23d618f3873e",
-                    "path": "",
+                    "id": "ee1d1a4a-fcb3-4ead-9994-e58cb7eceee8",
+                    "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Fire",
+                    "groups": "",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

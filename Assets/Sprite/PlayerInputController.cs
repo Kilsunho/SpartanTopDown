@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerInputController : TopDownControoller
+public class PlayerInputController : TopDownController
 {
     private Camera camera;
 
@@ -16,7 +16,7 @@ public class PlayerInputController : TopDownControoller
         CallMoveEvent(moveInput);
     }
 
-    public void OnLevelWasLoaded(InputValue value)
+    public void OnLook(InputValue value)
     {
         Vector2 newAim = value.Get<Vector2>();
 

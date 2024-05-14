@@ -3,36 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TopDownControoller : MonoBehaviour
+public class TopDownController : MonoBehaviour
 {
     public event Action<Vector2> OnMoveEvent;
     public event Action<Vector2> OnLookEvent;
 
-    public void CallMoveEvent(Vector2 direction)
+    public void CallMoveEvent(Vector2 value)
     {
-        OnMoveEvent?.Invoke(direction);
+        OnMoveEvent?.Invoke(value);
     }
 
-    public void CallLookEvent(Vector2 direction)
+    public void CallLookEvent(Vector2 value)
     {
-        OnLookEvent?.Invoke(direction);
+        OnLookEvent?.Invoke(value);
     }
 
-
-
-
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
